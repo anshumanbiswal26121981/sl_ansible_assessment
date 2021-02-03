@@ -3,11 +3,7 @@
   become: yes
   become_method: sudo
   vars:
-     remote_warfile: /root/workspace/myproject/target/myproject.war
-     remote_webapps: /usr/share/tomcat/webapps/
-     local_git_credential: gitcredential/.git-credentials
-     remote_git_credential: ~/.git-credentials
-
+     remote_warfile: /root/workspace/myproject/target/bookzy.war
   tasks:
     - name: check out the repository on the host
       git: repo=https://github.com/anshumanbiswal26121981/sl_jenkins_assessment.git dest=/root/workspace/myproject/ accept_hostkey=yes
