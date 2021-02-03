@@ -13,4 +13,4 @@
       git: repo=https://github.com/anshumanbiswal26121981/sl_jenkins_assessment.git dest=/root/workspace/myproject/ accept_hostkey=yes
 
     - name: maven clean package
-      command: mvn -f /root/workspace/myproject/pom.xml clean package
+      command: mvn -f /root/workspace/myproject/pom.xml -X clean package
